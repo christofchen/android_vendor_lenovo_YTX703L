@@ -30,11 +30,9 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libqti-at.so:system/vendor/lib/libqti-at.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libqti-gt.so:system/vendor/lib/libqti-gt.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libqti-at.so:system/vendor/lib64/libqti-at.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libqti-gt.so:system/vendor/lib64/libqti-gt.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
 
 # rild
