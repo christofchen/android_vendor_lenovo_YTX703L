@@ -121,6 +121,26 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/default.prop:system/vendor/default.prop \
     vendor/lenovo/YTX703L/proprietary/etc/IPACM_cfg.xml:system/etc/IPACM_cfg.xml \
 
+# extra init scripts
+PRODUCT_COPY_FILES += \
+    vendor/lenovo/YTX703L/proprietary/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh \
+
+# Other interesting init scripts that we're not including for now
+# (basically because I don't see where they should be called from):
+# etc/init.ath3k.bt.sh
+# etc/init.crda.sh
+# etc/init.qcom.audio.sh
+# etc/init.qcom.bt.sh
+# etc/init.qcom.coex.sh
+# etc/init.qcom.debug.sh
+# etc/init.qcom.efs.sync.sh
+# etc/init.qcom.fm.sh
+# etc/init.qcom.post_boot.sh
+# etc/init.qcom.sdio.sh
+# etc/init.qcom.uicc.sh
+# etc/init.qcom.zram.sh
+# etc/init.qti.ims.sh
+
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
