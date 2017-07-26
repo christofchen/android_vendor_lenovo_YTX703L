@@ -16,14 +16,26 @@
 
 LOCAL_PATH := $(call my-dir)
 
+# hostapd
+PRODUCT_COPY_FILES += \
+    vendor/lenovo/YTX703L/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    vendor/lenovo/YTX703L/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.deny \
+    vendor/lenovo/YTX703L/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd_default.conf \
+
 # dpmd
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/bin/dpmd:system/bin/dpmd \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
 
 # ipacm
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/bin/ipacm:system/bin/ipacm \
     vendor/lenovo/YTX703L/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
+    vendor/lenovo/YTX703L/proprietary/lib64/libdhcpcd.so:system/lib64/libdhcpcd.so \
+    vendor/lenovo/YTX703L/proprietary/lib64/libnetfilter_conntrack.so:system/lib64/libnetfilter_conntrack.so \
+    vendor/lenovo/YTX703L/proprietary/lib64/libnfnetlink.so:system/lib64/libnfnetlink.so \
+    vendor/lenovo/YTX703L/proprietary/lib64/libipanat.so:system/lib64/libipanat.so
 
 # qti
 PRODUCT_COPY_FILES += \
@@ -107,6 +119,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
     vendor/lenovo/YTX703L/proprietary/vendor/qcril.db:system/vendor/qcril.db \
     vendor/lenovo/YTX703L/proprietary/vendor/default.prop:system/vendor/default.prop \
+    vendor/lenovo/YTX703L/proprietary/etc/IPACM_cfg.xml:system/etc/IPACM_cfg.xml \
 
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
