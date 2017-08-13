@@ -35,10 +35,8 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libqti-at.so:system/vendor/lib/libqti-at.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libqti-gt.so:system/vendor/lib/libqti-gt.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libqti-at.so:system/vendor/lib64/libqti-at.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libqti-gt.so:system/vendor/lib64/libqti-gt.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
 
 # rild
 PRODUCT_COPY_FILES += \
@@ -98,46 +96,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
 
-# configs
-PRODUCT_COPY_FILES += \
-    vendor/lenovo/YTX703L/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
-    vendor/lenovo/YTX703L/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
-    vendor/lenovo/YTX703L/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
-    vendor/lenovo/YTX703L/proprietary/vendor/qcril.db:system/vendor/qcril.db \
-    vendor/lenovo/YTX703L/proprietary/vendor/default.prop:system/vendor/default.prop \
-    vendor/lenovo/YTX703L/proprietary/etc/IPACM_cfg.xml:system/etc/IPACM_cfg.xml \
-
-# extra init scripts
-PRODUCT_COPY_FILES += \
-    vendor/lenovo/YTX703L/proprietary/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh \
-
-# Other interesting init scripts that we're not including for now
-# (basically because I don't see where they should be called from):
-# etc/init.ath3k.bt.sh
-# etc/init.crda.sh
-# etc/init.qcom.audio.sh
-# etc/init.qcom.bt.sh
-# etc/init.qcom.coex.sh
-# etc/init.qcom.debug.sh
-# etc/init.qcom.efs.sync.sh
-# etc/init.qcom.fm.sh
-# etc/init.qcom.post_boot.sh
-# etc/init.qcom.sdio.sh
-# etc/init.qcom.uicc.sh
-# etc/init.qcom.zram.sh
-# etc/init.qti.ims.sh
-
-# Java
-PRODUCT_COPY_FILES += \
-    vendor/lenovo/YTX703L/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
-    vendor/lenovo/YTX703L/proprietary/framework/tcmiface.jar:system/framework/tcmiface.jar \
-    vendor/lenovo/YTX703L/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
-    vendor/lenovo/YTX703L/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
-    vendor/lenovo/YTX703L/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
-
-PRODUCT_PACKAGES += \
-    QtiTetherService
-
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
@@ -145,3 +103,20 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libdpmframework.so:system/vendor/lib64/libdpmframework.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libdiag.so:system/vendor/lib64/libdiag.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
+
+# Java
+# libconnctrl implements ITetherService needed by QtiTetherService
+PRODUCT_COPY_FILES += \
+    vendor/lenovo/YTX703L/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+    vendor/lenovo/YTX703L/proprietary/framework/tcmiface.jar:system/framework/tcmiface.jar \
+    vendor/lenovo/YTX703L/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/lenovo/YTX703L/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
+    vendor/lenovo/YTX703L/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libQtiTether.so:system/vendor/lib64/libQtiTether.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
+
+PRODUCT_PACKAGES += \
+    QtiTetherService
+
