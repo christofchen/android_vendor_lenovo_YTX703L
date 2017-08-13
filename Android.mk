@@ -18,7 +18,6 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter YTX703L,$(TARGET_DEVICE)),)
 
-BOARD_PROVIDES_LIBRIL := true
 include $(CLEAR_VARS)
 LOCAL_MODULE := QtiTetherService
 LOCAL_MODULE_OWNER := lenovo

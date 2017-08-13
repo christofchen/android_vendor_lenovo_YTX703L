@@ -49,19 +49,12 @@ PRODUCT_COPY_FILES += \
 
 # rild
 PRODUCT_COPY_FILES += \
-    vendor/lenovo/YTX703L/proprietary/bin/rild:system/bin/rild \
-    vendor/lenovo/YTX703L/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/lenovo/YTX703L/proprietary/lib/librilutils.so:system/lib/librilutils.so \
-    vendor/lenovo/YTX703L/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
-    vendor/lenovo/YTX703L/proprietary/lib64/libril.so:system/lib64/libril.so \
-    vendor/lenovo/YTX703L/proprietary/lib64/librilutils.so:system/lib64/librilutils.so \
-    vendor/lenovo/YTX703L/proprietary/lib64/libreference-ril.so:system/lib64/libreference-ril.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
