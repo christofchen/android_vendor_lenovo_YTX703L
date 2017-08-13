@@ -23,12 +23,11 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
 
 # ipacm
+# No 32-bit version for these libraries
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/bin/ipacm:system/bin/ipacm \
     vendor/lenovo/YTX703L/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/lenovo/YTX703L/proprietary/lib64/libdhcpcd.so:system/lib64/libdhcpcd.so \
-    vendor/lenovo/YTX703L/proprietary/lib64/libnetfilter_conntrack.so:system/lib64/libnetfilter_conntrack.so \
-    vendor/lenovo/YTX703L/proprietary/lib64/libnfnetlink.so:system/lib64/libnfnetlink.so \
     vendor/lenovo/YTX703L/proprietary/lib64/libipanat.so:system/lib64/libipanat.so
 
 # qti
