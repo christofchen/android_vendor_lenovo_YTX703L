@@ -107,6 +107,8 @@ PRODUCT_COPY_FILES += \
 # Java
 # libconnctrl implements ITetherService needed by QtiTetherService
 PRODUCT_COPY_FILES += \
+    vendor/lenovo/YTX703L/proprietary/framework/dpm.jar:system/framework/dpm.jar \
+    vendor/lenovo/YTX703L/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/lenovo/YTX703L/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/lenovo/YTX703L/proprietary/framework/tcmiface.jar:system/framework/tcmiface.jar \
     vendor/lenovo/YTX703L/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
