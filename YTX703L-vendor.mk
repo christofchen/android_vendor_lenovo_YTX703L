@@ -16,12 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-# hostapd
-PRODUCT_COPY_FILES += \
-    vendor/lenovo/YTX703L/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    vendor/lenovo/YTX703L/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.deny \
-    vendor/lenovo/YTX703L/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd_default.conf \
-
 # dpmd
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/bin/dpmd:system/bin/dpmd \
