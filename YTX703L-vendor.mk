@@ -16,28 +16,31 @@
 
 LOCAL_PATH := $(call my-dir)
 
-# dpmd
+# dpmd dependencies
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
 
-# ipacm
+# ipacm + dependencies
 # No 32-bit version for these libraries
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/bin/ipacm:system/bin/ipacm \
     vendor/lenovo/YTX703L/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
+    vendor/lenovo/YTX703L/proprietary/etc/init/ipacm.rc:system/etc/init/ipacm.rc \
+    vendor/lenovo/YTX703L/proprietary/etc/init/ipacm-diag.rc:system/etc/init/ipacm-diag.rc \
     vendor/lenovo/YTX703L/proprietary/lib64/libdhcpcd.so:system/lib64/libdhcpcd.so \
     vendor/lenovo/YTX703L/proprietary/lib64/libipanat.so:system/lib64/libipanat.so
 
-# qti
+# qti + dependencies
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/bin/qti:system/vendor/bin/qti \
+    vendor/lenovo/YTX703L/proprietary/etc/init/qti.rc:system/etc/init/qti.rc \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libqti-at.so:system/vendor/lib/libqti-at.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libqti-gt.so:system/vendor/lib/libqti-gt.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libqti-at.so:system/vendor/lib64/libqti-at.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libqti-gt.so:system/vendor/lib64/libqti-gt.so \
 
-# rild
+# rild dependencies
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
@@ -52,15 +55,17 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libqdi.so:system/vendor/lib64/libqdi.so \
 
-# netmgrd
+# netmgrd + dependencies
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/bin/netmgrd:system/bin/netmgrd \
+    vendor/lenovo/YTX703L/proprietary/etc/init/netmgrd.rc:system/etc/init/netmgrd.rc \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
 
-# qmuxd
+# qmuxd + dependencies
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/lenovo/YTX703L/proprietary/etc/init/qmuxd.rc:system/etc/init/qmuxd.rc \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \

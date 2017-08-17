@@ -1,0 +1,4 @@
+service netmgrd /system/bin/netmgrd
+    class main
+    disabled
+
