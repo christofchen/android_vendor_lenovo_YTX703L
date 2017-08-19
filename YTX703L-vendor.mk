@@ -16,6 +16,65 @@
 
 LOCAL_PATH := $(call my-dir)
 
+# WCNSS_qcom_wlan_nv.bin and WCNSS_wlan_dictionary.dat are
+# symlinks that point to /persist
+PRODUCT_COPY_FILES += \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/wlan/prima/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a530_pfp.fw:system/etc/firmware/a530_pfp.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/a530_pm4.fw:system/etc/firmware/a530_pm4.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/cpp_firmware_v1_4_0.fw:system/etc/firmware/cpp_firmware_v1_4_0.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/cpp_firmware_v1_5_0.fw:system/etc/firmware/cpp_firmware_v1_5_0.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/DE.o.msm8952:system/etc/firmware/o.msm8952 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/DE.o.msm8976:system/etc/firmware/o.msm8976 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/ice40.bin:system/etc/firmware/ice40.bin \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/nfc_test.bin:system/etc/firmware/nfc_test.bin \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/Signedrompatch_v20.bin:system/etc/firmware/Signedrompatch_v20.bin \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/Signedrompatch_v21.bin:system/etc/firmware/Signedrompatch_v21.bin \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/Signedrompatch_v24.bin:system/etc/firmware/Signedrompatch_v24.bin \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/Signedrompatch_v30.bin:system/etc/firmware/Signedrompatch_v30.bin \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus.b00:system/etc/firmware/venus.b00 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus.b01:system/etc/firmware/venus.b01 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus.b02:system/etc/firmware/venus.b02 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus.b03:system/etc/firmware/venus.b03 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus.b04:system/etc/firmware/venus.b04 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus.mbn:system/etc/firmware/venus.mbn \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus-v1.b00:system/etc/firmware/venus-v1.b00 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus-v1.b01:system/etc/firmware/venus-v1.b01 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus-v1.b02:system/etc/firmware/venus-v1.b02 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus-v1.b03:system/etc/firmware/venus-v1.b03 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus-v1.b04:system/etc/firmware/venus-v1.b04 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus-v1.mbn:system/etc/firmware/venus-v1.mbn \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/venus-v1.mdt:system/etc/firmware/venus-v1.mdt \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b00:system/etc/firmware/widevine.b00 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b01:system/etc/firmware/widevine.b01 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b04:system/etc/firmware/widevine.b04 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b05:system/etc/firmware/widevine.b05 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b06:system/etc/firmware/widevine.b06 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt
+
 # dpmd dependencies
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
