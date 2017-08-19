@@ -75,6 +75,16 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b06:system/etc/firmware/widevine.b06 \
     vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt
 
+# Vendor init scripts extracted from init.qcom.rc (wip)
+PRODUCT_COPY_FILES += \
+    vendor/lenovo/YTX703L/proprietary/etc/init/adsprpcd.rc:system/etc/init/adsprpcd.rc \
+    vendor/lenovo/YTX703L/proprietary/etc/init/per_mgr.rc:system/etc/init/per_mgr.rc \
+    vendor/lenovo/YTX703L/proprietary/etc/init/per_proxy.rc:system/etc/init/per_proxy.rc \
+    vendor/lenovo/YTX703L/proprietary/etc/init/perfd.rc:system/etc/init/perfd.rc \
+    vendor/lenovo/YTX703L/proprietary/etc/init/qcamerasvr.rc:system/etc/init/qcamerasvr.rc \
+    vendor/lenovo/YTX703L/proprietary/etc/init/qseecomd.rc:system/etc/init/qseecomd.rc \
+    vendor/lenovo/YTX703L/proprietary/etc/init/thermal-engine.rc:system/etc/init/thermal-engine.rc
+
 # dpmd dependencies
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
