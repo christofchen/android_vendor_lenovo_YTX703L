@@ -1,0 +1,6 @@
+service imscmservice /system/bin/imscmservice
+    class main
+    user system
+    group radio diag inet log
+    disabled
+

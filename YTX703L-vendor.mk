@@ -85,6 +85,25 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/etc/init/qseecomd.rc:system/etc/init/qseecomd.rc \
     vendor/lenovo/YTX703L/proprietary/etc/init/thermal-engine.rc:system/etc/init/thermal-engine.rc
 
+# ims + dependencies
+PRODUCT_COPY_FILES += \
+    vendor/lenovo/YTX703L/proprietary/bin/imscmservice:system/bin/imscmservice \
+    vendor/lenovo/YTX703L/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
+    vendor/lenovo/YTX703L/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
+    vendor/lenovo/YTX703L/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so
+
 # dpmd dependencies
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
@@ -109,14 +128,13 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libqti-at.so:system/vendor/lib64/libqti-at.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libqti-gt.so:system/vendor/lib64/libqti-gt.so \
 
-# rild dependencies
+# vendor ril + dependencies
 PRODUCT_COPY_FILES += \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
@@ -128,30 +146,22 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/lenovo/YTX703L/proprietary/etc/init/netmgrd.rc:system/etc/init/netmgrd.rc \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
 
 # qmuxd + dependencies
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/lenovo/YTX703L/proprietary/etc/init/qmuxd.rc:system/etc/init/qmuxd.rc \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib/libril-qc-radioconfig.so:system/vendor/lib/libril-qc-radioconfig.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
+    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libxml.so:system/vendor/lib64/libxml.so
 
 # Java
 # libconnctrl implements ITetherService needed by QtiTetherService
 PRODUCT_COPY_FILES += \
-    vendor/lenovo/YTX703L/proprietary/framework/dpm.jar:system/framework/dpm.jar \
     vendor/lenovo/YTX703L/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/lenovo/YTX703L/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/lenovo/YTX703L/proprietary/framework/tcmiface.jar:system/framework/tcmiface.jar \
-    vendor/lenovo/YTX703L/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/lenovo/YTX703L/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/lenovo/YTX703L/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
@@ -159,5 +169,11 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
 
 PRODUCT_PACKAGES += \
-    QtiTetherService
-
+    QtiTetherService \
+    qcrilhook \
+    qcnvitems \
+    qcrilmsgtunnel \
+    datastatusnotification \
+    CNEService \
+    ims \
+    imssettings
