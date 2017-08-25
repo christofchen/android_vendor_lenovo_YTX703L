@@ -114,7 +114,7 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so
 
 # ipacm + dependencies
-# No 32-bit version for these libraries
+# TODO: build ipacm from source: data-ipa-cfg-mgr
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/bin/ipacm:system/bin/ipacm \
     vendor/lenovo/YTX703L/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
