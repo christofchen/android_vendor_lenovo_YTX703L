@@ -16,8 +16,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
-# WCNSS_qcom_wlan_nv.bin and WCNSS_wlan_dictionary.dat are
-# symlinks that point to /persist
+# WCNSS_qcom_wlan_nv.bin and WCNSS_wlan_dictionary.dat were
+# symlinks that pointed to /persist. No longer.
 PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/lenovo/YTX703L/proprietary/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:system/etc/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
