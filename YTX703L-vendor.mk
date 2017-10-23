@@ -66,14 +66,14 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/etc/firmware/venus-v1.b04:system/etc/firmware/venus-v1.b04 \
     vendor/lenovo/YTX703L/proprietary/etc/firmware/venus-v1.mbn:system/etc/firmware/venus-v1.mbn \
     vendor/lenovo/YTX703L/proprietary/etc/firmware/venus-v1.mdt:system/etc/firmware/venus-v1.mdt \
-    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b00:system/etc/firmware/widevine.b00 \
-    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b01:system/etc/firmware/widevine.b01 \
-    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02 \
-    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03 \
-    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b04:system/etc/firmware/widevine.b04 \
-    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b05:system/etc/firmware/widevine.b05 \
-    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b06:system/etc/firmware/widevine.b06 \
-    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b00:system/vendor/firmware/widevine.b00 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b01:system/vendor/firmware/widevine.b01 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b02:system/vendor/firmware/widevine.b02 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b03:system/vendor/firmware/widevine.b03 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b04:system/vendor/firmware/widevine.b04 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b05:system/vendor/firmware/widevine.b05 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.b06:system/vendor/firmware/widevine.b06 \
+    vendor/lenovo/YTX703L/proprietary/etc/firmware/widevine.mdt:system/vendor/firmware/widevine.mdt
 
 # Vendor init scripts extracted from init.qcom.rc (wip)
 PRODUCT_COPY_FILES += \
