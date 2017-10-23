@@ -85,29 +85,6 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/YTX703L/proprietary/etc/init/qseecomd.rc:system/etc/init/qseecomd.rc \
     vendor/lenovo/YTX703L/proprietary/etc/init/thermal-engine.rc:system/etc/init/thermal-engine.rc
 
-# ims + dependencies
-# IMS == IP Media Subsystem (VoLTE)
-PRODUCT_COPY_FILES += \
-    vendor/lenovo/YTX703L/proprietary/bin/imscmservice:system/bin/imscmservice \
-    vendor/lenovo/YTX703L/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
-    vendor/lenovo/YTX703L/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
-    vendor/lenovo/YTX703L/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imscamera.so:system/vendor/lib64/lib-imscamera.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsrcscmservice.so:system/vendor/lib64/lib-imsrcscmservice.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsrcscm.so:system/vendor/lib64/lib-imsrcscm.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsrcscmclient.so:system/vendor/lib64/lib-imsrcscmclient.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-rtpsl.so:system/vendor/lib64/lib-rtpsl.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-rtpcore.so:system/vendor/lib64/lib-rtpcore.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-rtpdaemoninterface.so:system/vendor/lib64/lib-rtpdaemoninterface.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-rtpcommon.so:system/vendor/lib64/lib-rtpcommon.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
-    vendor/lenovo/YTX703L/proprietary/vendor/lib64/lib-imsvt.so:system/vendor/lib64/lib-imsvt.so
-
 # dpmd dependencies
 # DPM == Device Policy Manager
 PRODUCT_COPY_FILES += \
@@ -167,8 +144,4 @@ PRODUCT_PACKAGES += \
     QtiTetherService \
     qcrilhook \
     qcnvitems \
-    qcrilmsgtunnel \
-    datastatusnotification \
     CNEService \
-    ims \
-    imssettings
