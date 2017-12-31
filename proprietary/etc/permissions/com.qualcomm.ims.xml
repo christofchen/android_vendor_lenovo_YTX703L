@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<permissions>
-    <library name="com.qualcomm.ims"
-             file="/system/vendor/app/ims/ims.apk"/>
-    <permission name="android.permission.READ_PHONE_STATE" >
-    <group gid="readphonestate" />
-    </permission>
-</permissions>
-

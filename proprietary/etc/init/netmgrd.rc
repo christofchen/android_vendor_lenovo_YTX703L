@@ -1,7 +1,0 @@
-service netmgrd /system/bin/netmgrd
-    class main
-    user root
-    group root wifi wakelock radio inet
-    writepid /dev/cpuset/system-background/tasks
-    disabled
-
