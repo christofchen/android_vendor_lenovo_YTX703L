@@ -1,6 +1,0 @@
-service perfd /system/vendor/bin/perfd
-    class main
-    user root
-    disabled
-    writepid /dev/cpuset/system-background/tasks
-
